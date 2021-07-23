@@ -19,5 +19,6 @@
 }
 
 .text-green { 
-	color: green 
+	color: green;
+	font-weight: bold !important;
 }
