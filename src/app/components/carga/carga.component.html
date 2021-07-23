@@ -1,21 +1,20 @@
 <div class="row">
     <div class="col-md-4">
-        <h3>Seleccione archivos</h3>
+        <h3 class="mb-3">Seleccione sus imágenes</h3>
         <div    appNgDropFiles 
                 [archivos]="archivos"
                 (mouseSobre)="pruebaSobreElemento($event)" 
                 [ngClass]="{'file-over': estaSobreElemento}" 
                 class="well drop-zone"
                 >
-            <h4>Deje caer aquí los archivos</h4>
+            <h4>Arrastre aquí sus imágenes</h4>
             <img src="assets/img/drop-images.png" alt="">
         </div>
     </div>
-    <div class="col-md-8">
-        <h4>Cargar archivos</h4>
-        <button (click)="cargarImagenes()" [disabled]="archivos.length === 0"   class="btn btn-success">Cargar a Firebase</button>
+    <div class="col-md-8 mt-4">
+        <h4 class="mt-2">Cargar sus imágenes</h4>
+        <button (click)="cargarImagenes()" [disabled]="archivos.length === 0"   class="btn btn-success mrb-5">Cargar a Firebase</button>
         <button (click)="limpiarArchivos()" class="btn btn-danger">Limpiar</button>
-
         <table class="table">
             <thead class="thead=dark">
                 <tr>
